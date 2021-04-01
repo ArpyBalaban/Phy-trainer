@@ -2,7 +2,7 @@
 	"user":{
 		"Name_Surname":"" ,
 		"age":0 ,
-		"gender":"",
+		"gender":[0],
 		"weight":{
 			"starting_weight": 0,
 			"weight_goal": 0,
@@ -10,7 +10,8 @@
 		},
 		"height":0,
 		"health_restrictions":[0],
-		"productivity":0
+		"productivity":0,
+		"fitness_level": [0],
 
 	}
 }
