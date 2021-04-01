@@ -53,6 +53,24 @@ def main():
     #recommend_exercise(current_user)
     save_to_file(users)
 
+def Add_user():
+	user = {
+		"name_surname" : "",
+		"age" : 0,
+		"gender" : [0],
+		"starting_weight" : 0,
+		"height" : 0,
+		"fitness_level" : [0],
+		"health_restrictions" : [0],
+		}
+	user["name"] = input("Please insert your name and surname: ")
+	user["age"] = input("Please insert your age: ")
+	user["gender"] = input("Please select your gender")
+	user["starting_weight"] = input("Please insert your current weight: ")
+	user["height"] = input("Please insert your height: ")
+	user["fitness_level"] = input("Please select your fitness level: ")
+	user["health_restrictions"] = input("Please select your health conditions from the list: ")
+	
 
 
 
