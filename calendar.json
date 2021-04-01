@@ -1,0 +1,10 @@
+{
+	"calender":{
+		"starting_date":"",
+		"days_present": 0,
+		"days_to_streak":0,
+		"week_streaks":0,
+		"milestones":0,
+	
+	}
+}

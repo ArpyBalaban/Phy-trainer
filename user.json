@@ -2,18 +2,13 @@
 	"user":{
 		"Name_Surname":"" ,
 		"age":0 ,
+		"gender":"",
 		"weight":{
 			"starting_weight": 0,
 			"weight_goal": 0,
 			"current_weight": 0
 		},
 		"height":0,
-		"calendar":{
-			"starting_date":"" ,
-			"absent_days":0 ,
-			"days_present": 0,
-			"deadline":""
-		},
 		"health_restrictions":[0],
 		"productivity":0
 
