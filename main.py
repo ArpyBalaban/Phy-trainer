@@ -10,9 +10,9 @@ def loadExistingUsers():
         return users
 
 
-def chack_for_username(username, users):
+def check_for_username(username, users):
     for user in users:
-        s = users.get("Name_Surname")
+        s = user["Name_Surname"]
         if(username == s):
             print(username)
 
@@ -21,6 +21,24 @@ def save_to_file(users):
     f.write(json.dumps(users,indent = 2))
     f.close
 
+def add_user():
+	user = {
+		"name_surname" : "",
+		"age" : 0,
+		"gender" : 0,
+		"starting_weight" : 0,
+		"height" : 0,
+		"fitness_level" : 0,
+		"health_restrictions" : [0],
+		}
+	user["name"] = input("Please insert your name and surname: ")
+	user["age"] = input("Please insert your age: ")
+	user["gender"] = input("Please select your gender")
+	user["starting_weight"] = input("Please insert your current weight: ")
+	user["height"] = input("Please insert your height: ")
+	user["fitness_level"] = input("Please select your fitness level: ")
+	user["health_restrictions"] = input("Please select your health conditions from the list: ")
+	
 
 def main():
     print(""" /$$$$$$$  /$$                           /$$                        /$$                              
@@ -44,7 +62,7 @@ def main():
             check_for_username(username, users)
             break
         elif(insert_mode == "yes"):
-            #current_user = Add_user()
+            current_user = add_user()
             users.append(current_user)
             break
         else:
@@ -52,28 +70,6 @@ def main():
     
     #recommend_exercise(current_user)
     save_to_file(users)
-
-def Add_user():
-	user = {
-		"name_surname" : "",
-		"age" : 0,
-		"gender" : [0],
-		"starting_weight" : 0,
-		"height" : 0,
-		"fitness_level" : [0],
-		"health_restrictions" : [0],
-		}
-	user["name"] = input("Please insert your name and surname: ")
-	user["age"] = input("Please insert your age: ")
-	user["gender"] = input("Please select your gender")
-	user["starting_weight"] = input("Please insert your current weight: ")
-	user["height"] = input("Please insert your height: ")
-	user["fitness_level"] = input("Please select your fitness level: ")
-	user["health_restrictions"] = input("Please select your health conditions from the list: ")
-	
-
-
-
 
 
 main()
