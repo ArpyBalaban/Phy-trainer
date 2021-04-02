@@ -65,9 +65,11 @@ def main():
                      \______/                                                                        """)
     users = []
     users = loadExistingUsers()
-    while (True):
-        print("Hello, I am Phy-trainer")
-        insert_mode = input("Are you a new user? (yes/no)")
+
+    print("Hello, I am Phy-trainer")
+    insert_mode = input("Are you a new user? (yes/no)")
+    n = 1
+    while(n != 0):
         if(insert_mode == "no"):
             username =input("Enter username: ")
             n = check_for_username(username, users)
@@ -78,6 +80,16 @@ def main():
             else:
                 print("Sorry you are not a current user")
                 answer =input("Would you like to register? (yes,no): ")
+                while(True):
+                    if(answer == "no"):
+                        print("Goodbye")
+                        n = 0
+                        break
+                    elif(answer == "yes"):
+                        insert_mode = "yes"
+                        break
+                    else:
+                        print("please enter yes or no")
 
 
         elif(insert_mode == "yes"):

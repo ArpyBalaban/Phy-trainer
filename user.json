@@ -12,5 +12,47 @@
     "fitness_level": "1",
     "health_restrictions": "nose bleeds",
     "starting_weight": "60"
+  },
+  {
+    "name_surname": "Lala",
+    "age": "23",
+    "gender": 0,
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 0
+    },
+    "height": "165",
+    "fitness_level": "2",
+    "health_restrictions": "",
+    "starting_weight": "70"
+  },
+  {
+    "name_surname": "Pat",
+    "age": "45",
+    "gender": "M",
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 0
+    },
+    "height": "180",
+    "fitness_level": "1",
+    "health_restrictions": "blood presure",
+    "starting_weight": "88"
+  },
+  {
+    "name_surname": "Mat",
+    "age": "46",
+    "gender": "M",
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 0
+    },
+    "height": "178",
+    "fitness_level": "2",
+    "health_restrictions": "",
+    "starting_weight": "78"
   }
 ]
