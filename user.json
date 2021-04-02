@@ -1,18 +1,16 @@
- [
-	{
-		"Name_Surname":"" ,
-		"age":0 ,
-		"gender":[0],
-		"weight":{
-			"starting_weight": 0,
-			"weight_goal": 0,
-			"current_weight": 0
-		},
-		"height":0,
-		"health_restrictions":[0],
-		"productivity":0,
-		"fitness_level": [0]
-
-	}
+[
+  {
+    "name_surname": "Arpy Balaban",
+    "age": "19",
+    "gender": 0,
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 0
+    },
+    "height": "170",
+    "fitness_level": "1",
+    "health_restrictions": "nose bleeds",
+    "starting_weight": "60"
+  }
 ]
-
