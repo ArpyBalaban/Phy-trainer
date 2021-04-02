@@ -1,5 +1,5 @@
-{
-	"user":{
+ [
+	{
 		"Name_Surname":"" ,
 		"age":0 ,
 		"gender":[0],
@@ -11,7 +11,8 @@
 		"height":0,
 		"health_restrictions":[0],
 		"productivity":0,
-		"fitness_level": [0],
+		"fitness_level": [0]
 
 	}
-}
+]
+
