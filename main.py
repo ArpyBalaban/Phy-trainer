@@ -17,7 +17,6 @@ def check_for_username(username, users):
     for user in users:
         s = user["name_surname"]
         if(username == s):
-            print(username)
             return user
 
 def save_to_file(users):
@@ -87,7 +86,7 @@ def recommend_exercise(current_user, exercises):
                 selection.append(exercise)
 
     l = len(selection)
-    i = randint(0, l)
+    i = randint(0, l-1)
     return selection[i]["name"]
 
 
@@ -120,8 +119,17 @@ def main():
             n = check_for_username(username, users)
 
             if(n):
+                print(""" _                      _   _       
+| |                    | | (_)      
+| | ___   __ _  ___  __| |  _ _ __  
+| |/ _ \ / _` |/ _ \/ _` | | | '_ \ 
+| | (_) | (_| |  __/ (_| | | | | | |
+|_|\___/ \__, |\___|\__,_| |_|_| |_|
+          __/ |                     
+         |___/                      """)
                 print("Welcome back "+ username)
-                print(recommend_exercise(n[1], exercises))
+                rec_exe =recommend_exercise(n, exercises)
+                print("Do "+ rec_exe + " this many times")
                 break
             else:
                 print("Sorry you are not a current user")

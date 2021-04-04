@@ -26,5 +26,19 @@
     "fitness_level": 3,
     "health_restrictions": "",
     "starting_weight": 67
+  },
+  {
+    "name_surname": "Vaspur lalaian",
+    "age": "19",
+    "gender": "M",
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 79
+    },
+    "height": 173,
+    "fitness_level": 1,
+    "health_restrictions": "",
+    "starting_weight": 79
   }
 ]
