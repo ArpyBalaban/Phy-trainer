@@ -65,9 +65,9 @@
 		{	"name": "squat",
 			"calories_per_1": 8,
 			"restriction": [""],
-			"equipment": [no equipment needed],
+			"equipment": [],
 			"sec_per_1": 5,
-			"bmi_reccomended": ["O","N","U"]
+			"bmi_reccomended": ["O","N","U"],
 			"type":[
 				{
 					"name": "regular",
@@ -92,9 +92,9 @@
 		{	"mame": "burpee",
 			"calories_per_1": 10,
 			"restriction": [""],
-			"equipment": [no equipment needed],
+			"equipment": [],
 			"sec_per_1": 8,
-			"bmi_reccomended": ["O","N",]
+			"bmi_reccomended": ["O","N"],
 			"type":[
 				{
 					"name": "regular",

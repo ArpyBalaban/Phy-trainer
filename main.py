@@ -24,7 +24,7 @@ def save_to_file(users):
     f.write(json.dumps(users,indent = 2))
     f.close
 
-def add_user():
+def add_user(users):
         user = {"name_surname" : "",
                 "age" : 0,
                 "gender" : 0,
@@ -35,9 +35,14 @@ def add_user():
                 },
                 "height" : 0,
                 "fitness_level" : 0,
-                "health_restrictions" : [0],
+                "health_restrictions" : [0]
                 }
-        user["name_surname"] = input("Please insert your name and surname: ")
+        while(True):
+            possable_username = user["name_surname"] = input("Please insert your name and surname: ")
+            if not(check_for_username(possable_username, users)):
+                break
+            print("That username is taken, please enter a different one. ")
+
         user["age"] = input("Please insert your age: ")
         while(True):
             user["gender"] = input("Please select your gender F/M): ")
@@ -136,7 +141,14 @@ def main():
                 answer =input("Would you like to register? (yes,no): ")
                 while(True):
                     if(answer == "no"):
-                        print("Goodbye")
+                        print(""" _____                 _ _                
+|  __ \               | | |               
+| |  \/ ___   ___   __| | |__  _   _  ___ 
+| | __ / _ \ / _ \ / _` | '_ \| | | |/ _ |
+| |_\ \ (_) | (_) | (_| | |_) | |_| |  __/
+ \____/\___/ \___/ \__,_|_.__/ \__, |\___|
+                                __/ |     
+                               |___/      """)
                         f = 0
                         break
                     elif(answer == "yes"):
@@ -147,7 +159,7 @@ def main():
 
 
         elif(insert_mode == "yes"):
-            current_user = add_user()
+            current_user = add_user(users)
             users.append(current_user)
             save_to_file(users)
             recommend_exercise(current_user, exercises)
