@@ -18,7 +18,7 @@ def check_for_username(username, users):
         s = user["name_surname"]
         if(username == s):
             print(username)
-            return [0, user]
+            return user
 
 def save_to_file(users):
     f = open("user.json","w")
@@ -88,7 +88,7 @@ def recommend_exercise(current_user, exercises):
 
     l = len(selection)
     i = randint(0, l)
-    return selection[i]
+    return selection[i]["name"]
 
 
 
@@ -119,9 +119,9 @@ def main():
             username =input("Enter username: ")
             n = check_for_username(username, users)
 
-            if(n[0] == 0):
+            if(n):
                 print("Welcome back "+ username)
-                recommend_exercise(n[1], exercises)
+                print(recommend_exercise(n[1], exercises))
                 break
             else:
                 print("Sorry you are not a current user")
@@ -148,7 +148,6 @@ def main():
         else:
             print ("please enter a valid input ")
     
-    #recommend_exercise(current_user)
     save_to_file(users)
 
 
