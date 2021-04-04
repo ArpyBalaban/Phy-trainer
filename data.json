@@ -47,21 +47,79 @@
 
 				{
 					"name":"standard",
-					"muscles":["abdomin","obliques"],
+					"muscles":["abdomen","obliques"],
 					"instructions":"Lie down on your back. Plant your feet on the floor, hip-width apart. Bend your knees and place your arms across your chest. Contract your abs and inhale. Exhale and lift your upper body, keeping your head and neck relaxed. Inhale and return to the starting position.",
 					"level":1
 				},
 				
 				{
-					"name":"bicycle",
+					"name":"bicycle crunch",
 					"muscles":["rectus abdominus", "hips", "obliques"],
-					"instruction":"Lie faceup with legs extended, feet together, and hands behind head with elbows wide. Raise right foot straight up toward the ceiling, keeping left leg extended and left foot a few inches off the floor. Perform a standard crunch, then lower your upper body to about an inch from the floor and switch legs.",
+					"instructions":"Lie faceup with legs extended, feet together, and hands behind head with elbows wide. Raise right foot straight up toward the ceiling, keeping left leg extended and left foot a few inches off the floor. Perform a standard crunch, then lower your upper body to about an inch from the floor and switch legs.",
 					"level":3
 					
 				}
 			]
+		},
 
+		{	"name": "squat",
+			"calories_per_1": 8,
+			"restriction": [""],
+			"equipment": [no equipment needed],
+			"sec_per_1": 5,
+			"bmi_reccomended": ["O","N","U"]
+			"type":[
+				{
+					"name": "regular",
+					"muscles":["glutes, calves,hamstrings, quadriceps"],
+					"instructions":"Stand straight with feet hip-width apart.Tighten your stomach muscles. Lower down, as if sitting in an invisible chair. Straighten your legs to lift back up. Repeat the movement.",
+					"level":1
+				},
+				{
+					"name": "squat pulses",
+					"muscles":["glutes, hamstrings, calves, quadriceps"],
+					"instructions":"Stand with feet about shoulder-width apart. Hands together out in front of your body. Squat down partially, about a quarter of the way down as you would for a normal squat. This is the starting position. Begin exercise by pulsing up and down, lowering your butt up and down about 6 inches or so. Be sure you are always in the squat position and never standing up during the exercise.",
+					"level":2
+				},
+				{
+					"name": "squat jump",
+					"muscles":["glutes, calves,hamstrings, quadriceps"],
+					"instructions":"Stand tall with your feet hip-width apart. Hinge at the hips to push your butt back and lower down until your thighs are parallel to the floor. Allow your knees to bend 45 degrees when you land, and then immediately drop back down into a squat, and jump again.",
+					"level":3
+				}
+				]
+		},
+		{	"mame": "burpee",
+			"calories_per_1": 10,
+			"restriction": [""],
+			"equipment": [no equipment needed],
+			"sec_per_1": 8,
+			"bmi_reccomended": ["O","N",]
+			"type":[
+				{
+					"name": "regular",
+					"muscles":["glutes, triceps, calves, quadriceps"],
+					"instructions": "Stand with your feet shoulder-width apart and your arms by your sides. Lower into a squat position and place your hands on the floor. Kick or step your legs back into a plank position. Jump or step your legs forward to return to a squat position. Return to the standing position.",
+					"level":1
+				},
+				{
+					"name": "jump",
+					"muscles":["glutes, triceps, calves, quadriceps"],
+					"instructions":"Stand with feet shoulder-width apart and arms at your sides. Bending at the hips and knees, reach down to put your hands on the ground. Once your hands reach the ground, extend your legs out behind you with a quick hop into a push-up position. Keeping your hands on the ground, reverse the leg drive motion to bring your feet back under you. Jump up as quickly as you can spreading your harms at legs out in an X formation.",
+					"level":2
+				},
+				{
+					"name": "pushup burpee",
+					"muscles":["glutes, triceps, calves, quadriceps"],
+					"instructions":"Stand with your feet shoulder-width apart.Squat as deeply as you can and place your hands on the floor. Kick back into a push-up position.Do one push-up.Bring your legs back to a squat and jump up, throwing your hands above your head.Land and repeat.",
+					"level":3
+				}
+			]
 		}
-
-
+		 
 ]
+
+
+
+
+
