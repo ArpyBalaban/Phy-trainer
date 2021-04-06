@@ -40,5 +40,19 @@
     "fitness_level": 1,
     "health_restrictions": "",
     "starting_weight": 79
+  },
+  {
+    "name_surname": "Ani",
+    "age": "14",
+    "gender": 0,
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 50
+    },
+    "height": 130,
+    "fitness_level": 2,
+    "health_restrictions": "",
+    "starting_weight": 50
   }
 ]
