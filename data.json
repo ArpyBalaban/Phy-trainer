@@ -65,9 +65,9 @@
 		{	"name": "squat",
 			"calories_per_1": 8,
 			"restriction": [""],
-			"equipment": [no equipment needed],
+			"equipment": ["no equipment needed"],
 			"sec_per_1": 5,
-			"bmi_reccomended": ["O","N","U"]
+			"bmi_reccomended": ["O","N","U"],
 			"type":[
 				{
 					"name": "regular",
@@ -89,12 +89,12 @@
 				}
 				]
 		},
-		{	"mame": "burpee",
+		{	"name": "burpee",
 			"calories_per_1": 10,
 			"restriction": [""],
-			"equipment": [no equipment needed],
+			"equipment": ["no equipment needed"],
 			"sec_per_1": 8,
-			"bmi_reccomended": ["O","N",]
+			"bmi_recommended": ["O","N"],
 			"type":[
 				{
 					"name": "regular",
@@ -115,11 +115,63 @@
 					"level":3
 				}
 			]
+		},
+		{	"name": "running",
+			"calories_per_1": 11,
+			"restriction": [""],
+			"equipment": ["no equipment needed"],
+			"sec_per_1": 60,
+			"bmi_recommended": ["O","N"],
+			"type":[
+				{
+					"name": "jogging",
+					"muscles":["glutes, abdominals, quads, hamstrings, calves"],
+					"instructions":"Keep your upper body relaxed while jogging and avoid heel-striking. Learn to run tall and hold your arms in a 90 degree position and keep them beside your body. Breathe regularly by syncing your breathing with your steps.",
+					"level": 2
+				},
+				{
+					"name": "walking",
+					"muscles":["quadriceps, hamstrings, buttock muscles"],
+					"instructions":"Keep your head up. When you're walking, focus on standing tall with your chin parallel to the ground and your ears aligned above your shoulders.",
+					"level": 1
+				},
+				{
+					"name": "sprinting",
+					"muscles":["hamstrings, quadriceps, glutes, hips, abdominals"],
+					"instructions":"Hold your torso straight and vertical, Hold your head still, but relax your face and neck, Bend your elbows at 90 degrees.",
+					"level": 3
+				}	
+			]
+		},
+		{	"name": "lunges",
+			"calories_per_1": 6,
+			"restrictions": [""],
+			"equipment": ["no equipment needed"], 
+			"sec_per_1": 60, 
+			"bmi_recommended": ["U","N"],
+			"type":[
+				{
+					"name": "Stationary lunges",
+					"muscles": ["glutes, quadriceps, hamstrings"],
+					"instructions":"Stand tall with your feet hip distance apart then take a large step backward with one foot. This is your start position. Lower the back knee to a 90 degree angle so both knees are bent then press up to start position and repeat. After desired number of reps, switch legs.", 
+					"level": 1
+				},
+				{
+					"name": "Side lunges",
+					"muscles": ["quads, glutes"],
+					"instructions":"Start standing tall, feet hip-width distance apart, Take a wide step out to the left. Bend your left knee as you push your hips back, Push off with your left leg to return to standing.",
+					"level": 2
+				},
+				{
+					"name": "Twist lunges",
+					"muscles": ["quads, glutes"],
+					"instructions":"Stand straight with your feet hip-width apart and your arms lifted at the front, Take a step forward with your right leg, bend both knees and rotate your torso to the right, Return to the starting position and repeat the movement on the left side, Alternate sides until set is complete.",
+					"level": 3
+				}
+			]
 		}
-		 
+
 ]
-
-
 
 
 
