@@ -92,7 +92,12 @@ def recommend_exercise(current_user, exercises):
 
     l = len(selection)
     i = randint(0, l-1)
-    return selection[i]["name"]
+
+    for types in selection[i]["type"]:
+        if (types["level"] == current_user["fitness_level"]):
+            chosen = types
+
+    return chosen
 
 
 
@@ -134,7 +139,14 @@ def main():
          |___/                      """)
                 print("Welcome back "+ username)
                 rec_exe =recommend_exercise(n, exercises)
-                print("Do "+ rec_exe + " this many times")
+                print("""......................................................................
+.   o   \ o /  _ o        __|    \ /     |__         o _  \ o /   o   .
+.  /|\    |     /\   __\o   \o    |    o/     o/__   /\     |    /|\  .
+.  / \   / \   | \  /) |    ( \  /o\  / )    |   (\  / |   / \   / \  .
+.       .......................................................       .""")
+                print("Do "+ rec_exe["name"] + " this many times")
+                print (""" ________________________________________""")
+                print("Here are the instructions: " + rec_exe["instructions"])
                 break
             else:
                 print("Sorry you are not a current user")
@@ -162,7 +174,7 @@ def main():
             current_user = add_user(users)
             users.append(current_user)
             save_to_file(users)
-            recommend_exercise(current_user, exercises)
+            rec_exe = recommend_exercise(current_user, exercises)
             break
 
         else:

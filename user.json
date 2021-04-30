@@ -54,5 +54,19 @@
     "fitness_level": 2,
     "health_restrictions": "",
     "starting_weight": 50
+  },
+  {
+    "name_surname": "Satenik Mnatsakanian",
+    "age": "23",
+    "gender": 0,
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 59
+    },
+    "height": 170,
+    "fitness_level": 3,
+    "health_restrictions": "",
+    "starting_weight": 59
   }
 ]
