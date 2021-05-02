@@ -82,9 +82,8 @@ def calculate_bmi(current_user):
 
     return bmi_status
 
-def recommend_exercise(current_user, exercises):
+def recommend_exercise(current_user, exercises,bmi_status):
     selection = []
-    bmi_status = calculate_bmi(current_user)
     for exercise in exercises:
         for letter in exercise["bmi_recommended"]:
             if(letter == bmi_status):
@@ -138,15 +137,23 @@ def main():
           __/ |                     
          |___/                      """)
                 print("Welcome back "+ username)
-                rec_exe =recommend_exercise(n, exercises)
-                print("""......................................................................
+                bmi_status = calculate_bmi(n)
+                while(True):
+                    rec_exe =recommend_exercise(n, exercises,bmi_status)
+                    print(""".......................................................................
 .   o   \ o /  _ o        __|    \ /     |__         o _  \ o /   o   .
 .  /|\    |     /\   __\o   \o    |    o/     o/__   /\     |    /|\  .
-.  / \   / \   | \  /) |    ( \  /o\  / )    |   (\  / |   / \   / \  .
-.       .......................................................       .""")
-                print("Do "+ rec_exe["name"] + " this many times")
-                print (""" ________________________________________""")
-                print("Here are the instructions: " + rec_exe["instructions"])
+.  / \   / \   | \  /) |    ( \  /o\  / )     |  (\  / |   / \   / \  .
+.......................................................................""")
+                    print("Do "+ rec_exe["name"] + " this many times")
+                    print (""" ________________________________________""")
+                    print("Here are the instructions: " + rec_exe["instructions"])
+                    print("____________________________________________")
+                    ans = input ("When you are ready to switch exercises - press Y,\nWhen you want to quit: press Q\n")
+                    if (ans == "Q"):
+                        f = 0
+                        break
+
                 break
             else:
                 print("Sorry you are not a current user")
@@ -174,8 +181,7 @@ def main():
             current_user = add_user(users)
             users.append(current_user)
             save_to_file(users)
-            rec_exe = recommend_exercise(current_user, exercises)
-            break
+            insert_mode = "no"
 
         else:
             print ("please enter a valid input ")

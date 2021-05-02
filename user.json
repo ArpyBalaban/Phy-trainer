@@ -68,5 +68,19 @@
     "fitness_level": 3,
     "health_restrictions": "",
     "starting_weight": 59
+  },
+  {
+    "name_surname": "Steven Hawking",
+    "age": "35",
+    "gender": "M",
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 75
+    },
+    "height": 180,
+    "fitness_level": 2,
+    "health_restrictions": "",
+    "starting_weight": 75
   }
 ]
