@@ -53,7 +53,7 @@
 				},
 				
 				{
-					"name":"bicycle crunch",
+					"name":"bicycle",
 					"muscles":["rectus abdominus", "hips", "obliques"],
 					"instructions":"Lie faceup with legs extended, feet together, and hands behind head with elbows wide. Raise right foot straight up toward the ceiling, keeping left leg extended and left foot a few inches off the floor. Perform a standard crunch, then lower your upper body to about an inch from the floor and switch legs.",
 					"level":3
@@ -76,13 +76,13 @@
 					"level":1
 				},
 				{
-					"name": "squat pulses",
+					"name": "pulses",
 					"muscles":["glutes, hamstrings, calves, quadriceps"],
 					"instructions":"Stand with feet about shoulder-width apart. Hands together out in front of your body. Squat down partially, about a quarter of the way down as you would for a normal squat. This is the starting position. Begin exercise by pulsing up and down, lowering your butt up and down about 6 inches or so. Be sure you are always in the squat position and never standing up during the exercise.",
 					"level":2
 				},
 				{
-					"name": "squat jump",
+					"name": "jump",
 					"muscles":["glutes, calves,hamstrings, quadriceps"],
 					"instructions":"Stand tall with your feet hip-width apart. Hinge at the hips to push your butt back and lower down until your thighs are parallel to the floor. Allow your knees to bend 45 degrees when you land, and then immediately drop back down into a squat, and jump again.",
 					"level":3
@@ -109,7 +109,7 @@
 					"level":2
 				},
 				{
-					"name": "pushup burpee",
+					"name": "pushup",
 					"muscles":["glutes, triceps, calves, quadriceps"],
 					"instructions":"Stand with your feet shoulder-width apart.Squat as deeply as you can and place your hands on the floor. Kick back into a push-up position.Do one push-up.Bring your legs back to a squat and jump up, throwing your hands above your head.Land and repeat.",
 					"level":3
@@ -151,19 +151,19 @@
 			"bmi_recommended": ["U","N"],
 			"type":[
 				{
-					"name": "Stationary lunges",
+					"name": "Stationary",
 					"muscles": ["glutes, quadriceps, hamstrings"],
 					"instructions":"Stand tall with your feet hip distance apart then take a large step backward with one foot. This is your start position. Lower the back knee to a 90 degree angle so both knees are bent then press up to start position and repeat. After desired number of reps, switch legs.", 
 					"level": 1
 				},
 				{
-					"name": "Side lunges",
+					"name": "Side",
 					"muscles": ["quads, glutes"],
 					"instructions":"Start standing tall, feet hip-width distance apart, Take a wide step out to the left. Bend your left knee as you push your hips back, Push off with your left leg to return to standing.",
 					"level": 2
 				},
 				{
-					"name": "Twist lunges",
+					"name": "Twist",
 					"muscles": ["quads, glutes"],
 					"instructions":"Stand straight with your feet hip-width apart and your arms lifted at the front, Take a step forward with your right leg, bend both knees and rotate your torso to the right, Return to the starting position and repeat the movement on the left side, Alternate sides until set is complete.",
 					"level": 3
