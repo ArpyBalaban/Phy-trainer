@@ -1,5 +1,6 @@
 import json
 from random import randint
+import time
 
 def loadExercises():
     with open('data.json') as existing_exe:
@@ -138,7 +139,24 @@ def main():
          |___/                      """)
                 print("Welcome back "+ username)
                 bmi_status = calculate_bmi(n)
+                exeInARow = 0
                 while(True):
+                    exeInARow += 1
+                    if (exeInARow >= 3):
+                        exeInARow = 0
+                        print(""" _____                 _     _       _       _ 
+|  __ \               | |   (_)     | |     | |
+| |  \/ ___   ___   __| |    _  ___ | |__   | |
+| | __ / _ \ / _ \ / _` |   | |/ _ \| '_ \  | |
+| |_\ \ (_) | (_) | (_| |   | | (_) | |_) | |_|
+ \____/\___/ \___/ \__,_|   | |\___/|_.__/  (_)
+                           _/ |                
+                          |__/                 """)
+                        print("It is important not to push yourself too hard, take a break for 20 seconds! ")
+                        for x in range (20):
+                            print(x)
+                            time.sleep(1)
+
                     rec_exe =recommend_exercise(n, exercises,bmi_status)
                     print(""".......................................................................
 .   o   \ o /  _ o        __|    \ /     |__         o _  \ o /   o   .
@@ -153,7 +171,7 @@ def main():
                     if (ans == "Q"):
                         f = 0
                         break
-
+                    
                 break
             else:
                 print("Sorry you are not a current user")
