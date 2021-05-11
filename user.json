@@ -110,5 +110,47 @@
     "fitness_level": 2,
     "health_restrictions": "",
     "starting_weight": 60
+  },
+  {
+    "name_surname": "Shardone",
+    "age": "19",
+    "gender": "M",
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 83
+    },
+    "height": 170,
+    "fitness_level": 1,
+    "health_restrictions": "",
+    "starting_weight": 83
+  },
+  {
+    "name_surname": "aasd",
+    "age": "12",
+    "gender": "M",
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 127
+    },
+    "height": 170,
+    "fitness_level": 2,
+    "health_restrictions": "",
+    "starting_weight": 127
+  },
+  {
+    "name_surname": "qw",
+    "age": 12,
+    "gender": 0,
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 12
+    },
+    "height": 23,
+    "fitness_level": 2,
+    "health_restrictions": "",
+    "starting_weight": 12
   }
 ]

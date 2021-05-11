@@ -44,7 +44,13 @@ def add_user(users):
                 break
             print("That username is taken, please enter a different one. ")
 
-        user["age"] = input("Please insert your age: ")
+        while(True):
+            try:
+                user["age"] = int(input("Please insert your age: "))
+                break
+            except ValueError :
+                print("please enter a valid age")
+
         while(True):
             user["gender"] = input("Please select your gender F/M): ")
             if(user["gender"] == "F"):
@@ -56,10 +62,21 @@ def add_user(users):
             else:
                 print("please enter a valid gender ")
 
-        a = int(input("Please insert your current weight: "))
+        while(True):    
+            try:
+                a = int(input("Please insert your current weight: "))
+                break
+            except ValueError:
+                print("please enter a valid weight")
+
         user["starting_weight"] = a
         user["weight"]["current_weight"] = a
-        user["height"] = int(input("Please insert your height in centimeters: "))
+        while(True):
+            try:
+                user["height"] = int(input("Please insert your height in centimeters: "))
+                break
+            except ValueError:
+                print("please insert a valid height")
         user["fitness_level"] = int(input("Please select your fitness level (1 being the lowest, 3 the highest): "))
         user["health_restrictions"] = input("Please enter any health restrictions you may have ")
         return user
@@ -121,9 +138,9 @@ def main():
     exercises = loadExercises()
 
     print("Hello, I am Phy-trainer")
-    insert_mode = input("Are you a new user? (yes/no)")
     f = 1
-    while(f != 0):
+    while(f != 0): #manage insert mode
+        insert_mode = input("Are you a new user? (yes/no)")
         if(insert_mode == "no"):
             username =input("Enter username: ")
             n = check_for_username(username, users)
@@ -140,7 +157,7 @@ def main():
                 print("Welcome back "+ username)
                 bmi_status = calculate_bmi(n)
                 exeInARow = 0
-                while(True):
+                while(True):                   #recommends exes
                     exeInARow += 1
                     if (exeInARow >= 3):
                         exeInARow = 0
@@ -203,8 +220,9 @@ def main():
 
         else:
             print ("please enter a valid input ")
+            
     
-    save_to_file(users)
+
 
 
 main()
