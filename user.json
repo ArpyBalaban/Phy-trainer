@@ -82,5 +82,33 @@
     "fitness_level": 2,
     "health_restrictions": "",
     "starting_weight": 75
+  },
+  {
+    "name_surname": "qer",
+    "age": "asdf",
+    "gender": 0,
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 67
+    },
+    "height": 150,
+    "fitness_level": 2,
+    "health_restrictions": "",
+    "starting_weight": 67
+  },
+  {
+    "name_surname": "lal",
+    "age": "12",
+    "gender": 0,
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 60
+    },
+    "height": 150,
+    "fitness_level": 2,
+    "health_restrictions": "",
+    "starting_weight": 60
   }
 ]

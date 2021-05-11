@@ -7,7 +7,7 @@
 			"equipment":["exercise mat"],
 			"sec_per_1" : 2,
 			"bmi_recommended":["O"],
-			"types" : [
+			"type" : [
 				{
 					"name": "strict",
 					"muscles" : ["arms", "shoulders", "chest", " serratus anterior"],
