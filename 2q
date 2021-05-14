@@ -39,8 +39,8 @@ def add_user(users):
                 "health_restrictions" : [0]
                 }
         while(True):
-            user["name_surname"] = input("Please insert your username: ")
-            if not(check_for_username(user["name_surname"], users)):
+            possable_username = user["name_surname"] = input("Please insert your name and surname: ")
+            if not(check_for_username(possable_username, users)):
                 break
             print("That username is taken, please enter a different one. ")
 
@@ -113,39 +113,19 @@ def recommend_exercise(current_user, exercises,bmi_status):
 	for types in selection[i]["type"]:
 		if (types["level"] == current_user["fitness_level"]):
 			chosen = types
-
-
-	exeInARow = 0
-	while(True):                   #recommends exes
-		exeInARow += 1
-		if (exeInARow >= 3):
-			exeInARow = 0
-			print(""" _____                 _     _       _       _ 
-|  __ \               | |   (_)     | |     | |
-| |  \/ ___   ___   __| |    _  ___ | |__   | |
-| | __ / _ \ / _ \ / _` |   | |/ _ \| '_ \  | |
-| |_\ \ (_) | (_) | (_| |   | | (_) | |_) | |_|
- \____/\___/ \___/ \__,_|   | |\___/|_.__/  (_)
-                           _/ |                
-                          |__/                 """)
-			print("It is important not to push yourself too hard, take a break for 20 seconds! ")
-			for x in range (20):
-				print(x)
-				time.sleep(1)
-		else:
-			print(""".......................................................................
+	print(types)
+	print(""".......................................................................
 .   o   \ o /  _ o        __|    \ /     |__         o _  \ o /   o   .
 .  /|\    |     /\   __\o   \o    |    o/     o/__   /\     |    /|\  .
 .  / \   / \   | \  /) |    ( \  /o\  / )     |  (\  / |   / \   / \  .
 .......................................................................""")
-			print("Do "+ chosen["name"] + " this many times")
-			print (""" ________________________________________""")
-			print("Here are the instructions: " + chosen["instructions"])
-			print("____________________________________________")
-			ans = input ("When you are ready to switch exercises - press Y,\nWhen you want to quit: press Q\n")
-			if ((ans == "Q")or (ans == "q")):
-				break
-	return
+	print("Do "+ chosen["name"] + " this many times")
+	print (""" ________________________________________""")
+	print("Here are the instructions: " + chosen["instructions"])
+	print("____________________________________________")
+	ans = input ("When you are ready to switch exercises - press Y,\nWhen you want to quit: press Q\n")
+	if (ans == "Q"):
+		f = 0
 
 
 
@@ -186,8 +166,26 @@ def main():
          |___/                      """)
                 print("Welcome back "+ username)
                 bmi_status = calculate_bmi(n)
-                recommend_exercise(n, exercises,bmi_status)
-                print("Sorry to see you leave, goodbye")   
+                exeInARow = 0
+                while(True):                   #recommends exes
+                    exeInARow += 1
+                    if (exeInARow >= 3):
+                        exeInARow = 0
+                        print(""" _____                 _     _       _       _ 
+|  __ \               | |   (_)     | |     | |
+| |  \/ ___   ___   __| |    _  ___ | |__   | |
+| | __ / _ \ / _ \ / _` |   | |/ _ \| '_ \  | |
+| |_\ \ (_) | (_) | (_| |   | | (_) | |_) | |_|
+ \____/\___/ \___/ \__,_|   | |\___/|_.__/  (_)
+                           _/ |                
+                          |__/                 """)
+                        print("It is important not to push yourself too hard, take a break for 20 seconds! ")
+                        for x in range (20):
+                            print(x)
+                            time.sleep(1)
+
+                    rec_exe =recommend_exercise(n, exercises,bmi_status)
+                   
                 break
             else:
                 print("Sorry you are not a current user")

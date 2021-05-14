@@ -152,5 +152,19 @@
     "fitness_level": 2,
     "health_restrictions": "",
     "starting_weight": 12
+  },
+  {
+    "name_surname": "Anahit Doshoyan",
+    "age": 18,
+    "gender": 0,
+    "weight": {
+      "starting_weight": 0,
+      "weight_goal": 0,
+      "current_weight": 46
+    },
+    "height": 160,
+    "fitness_level": 3,
+    "health_restrictions": "",
+    "starting_weight": 46
   }
 ]

@@ -9,20 +9,20 @@
 			"bmi_recommended":["O"],
 			"type" : [
 				{
-					"name": "strict",
+					"name": "strict pushups",
 					"muscles" : ["arms", "shoulders", "chest", " serratus anterior"],
 					"instructions":"Keep your shoulders, spine, and hips in a straight line. Lengthen your spine to keep your back straight. Make sure your hips don’t sag down or point upward. Look at a spot on the floor ahead of you as you keep your neck neutral. Engage your core and gluteal muscles when you do the exercise." ,
 					"level":2
 				},
 
-				{	"name": "Wide Hand",
+				{	"name": "Wide Hand pushups",
 					"muscles": ["chest", "shoulders", "upper arms"],
 					"instructions":"Face your fingers forward or slightly to the outside. Slowly bend your elbows out to the side as you lower your body toward the floor. Pause when your chest is just below your elbows. Engage your core as you press into your hands to lift your body back to the starting position.",
 					"level": 1
 				},
 				
 				{
-					"name": "Diamond",
+					"name": "Diamond pushups",
 					"muscles": ["triceps", "chest", "shoulders"],
 					"instructions": "Start in a plank position on all fours with your legs extended behind you and your hands stacked directly under your shoulders.Position your hands close together, spreading your fingers to create a diamond shape with your index fingers.Begin to lower your chest to the floor while keeping your back flat.Press back up into a full arm extension and repeat.",
 					"level":3
@@ -39,21 +39,21 @@
 			"bmi_recommended": ["N","U"],
 			"type":[
 				{	
-					"name": "twist",
+					"name": "twist crunchs",
 					"muscles":["abdomin", "obliques","hips","leg"],
 					"instructions":"Lie down on your back on a mat. Place your hands near your ears and lift your legs in the air folded at 90 degrees at the knees. Contract your abs and bring your right elbow across your body towards your left knee. Hold for three seconds. Return to the starting position and repeat the contraction on the other side with the left elbow.",
 					"level":2
 				},
 
 				{
-					"name":"standard",
+					"name":"standard crunches",
 					"muscles":["abdomen","obliques"],
 					"instructions":"Lie down on your back. Plant your feet on the floor, hip-width apart. Bend your knees and place your arms across your chest. Contract your abs and inhale. Exhale and lift your upper body, keeping your head and neck relaxed. Inhale and return to the starting position.",
 					"level":1
 				},
 				
 				{
-					"name":"bicycle",
+					"name":"bicycle crunches",
 					"muscles":["rectus abdominus", "hips", "obliques"],
 					"instructions":"Lie faceup with legs extended, feet together, and hands behind head with elbows wide. Raise right foot straight up toward the ceiling, keeping left leg extended and left foot a few inches off the floor. Perform a standard crunch, then lower your upper body to about an inch from the floor and switch legs.",
 					"level":3
@@ -70,7 +70,7 @@
 			"bmi_recommended": ["O","N","U"],
 			"type":[
 				{
-					"name": "regular",
+					"name": "regular squats",
 					"muscles":["glutes, calves,hamstrings, quadriceps"],
 					"instructions":"Stand straight with feet hip-width apart.Tighten your stomach muscles. Lower down, as if sitting in an invisible chair. Straighten your legs to lift back up. Repeat the movement.",
 					"level":1
@@ -82,7 +82,7 @@
 					"level":2
 				},
 				{
-					"name": "jump",
+					"name": "jumps",
 					"muscles":["glutes, calves,hamstrings, quadriceps"],
 					"instructions":"Stand tall with your feet hip-width apart. Hinge at the hips to push your butt back and lower down until your thighs are parallel to the floor. Allow your knees to bend 45 degrees when you land, and then immediately drop back down into a squat, and jump again.",
 					"level":3
@@ -97,7 +97,7 @@
 			"bmi_recommended": ["O","N"],
 			"type":[
 				{
-					"name": "regular",
+					"name": "regular burpees",
 					"muscles":["glutes, triceps, calves, quadriceps"],
 					"instructions": "Stand with your feet shoulder-width apart and your arms by your sides. Lower into a squat position and place your hands on the floor. Kick or step your legs back into a plank position. Jump or step your legs forward to return to a squat position. Return to the standing position.",
 					"level":1
@@ -109,7 +109,7 @@
 					"level":2
 				},
 				{
-					"name": "pushup",
+					"name": "burpee pushup",
 					"muscles":["glutes, triceps, calves, quadriceps"],
 					"instructions":"Stand with your feet shoulder-width apart.Squat as deeply as you can and place your hands on the floor. Kick back into a push-up position.Do one push-up.Bring your legs back to a squat and jump up, throwing your hands above your head.Land and repeat.",
 					"level":3
